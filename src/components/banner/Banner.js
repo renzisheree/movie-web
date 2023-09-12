@@ -2,7 +2,7 @@ import React from "react";
 import useSWR from "swr";
 import { SwiperSlide, Swiper } from "swiper/react";
 
-import { fetcher } from "../../config";
+import { fetcher } from "apiConfig/config";
 import { useNavigate } from "react-router-dom";
 import Button from "../button/Button";
 
