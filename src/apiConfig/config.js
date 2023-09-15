@@ -13,6 +13,8 @@ export const tmdbAPI = {
     `${tmdbEndpoint}/${movieId}/credits?api_key=${apiKey}`,
   getMovieVideo: (movieId) =>
     `${tmdbEndpoint}/${movieId}/videos?api_key=${apiKey}`,
+  getMovieMeta: (movieId, type) =>
+    `${tmdbEndpoint}/${movieId}/${type}?api_key=${apiKey}`,
 
   getSimilarMovie: (movieId) =>
     `${tmdbEndpoint}/${movieId}/similar?api_key=${apiKey}`,
