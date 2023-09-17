@@ -1,4 +1,4 @@
-import { Fragment, lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import "swiper/scss";
 import Main from "./components/layout/Main";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -13,7 +13,7 @@ const MovieDetailPage = lazy(() => import("./pages/MovieDetailPage"));
 
 function App() {
   return (
-    < >
+    <>
       <Suspense fallback={<></>}>
         <Router>
           <Routes>
